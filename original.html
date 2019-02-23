@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jscolor.js"></script>	
+<title>Mando Prototype X</title>
+</head>
+<body>
+<div id="colorpicker_container" style="position: absolute; right: 20px;">
+	<p>Pick your color here!</p>
+	<input class="jscolor" value="ab2567">
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.98 93.98">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;}.cls-1,.cls-2{stroke:#231f20;stroke-miterlimit:10;}.cls-2{fill:#fff;}</style>
+    </defs>
+    <title>Wren Helmet</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Wren_Helmet" data-name="Wren Helmet">
+            <path class="cls-1" width="1" d="M10.31,44.65a28.56,28.56,0,0,1,56.34,0c0,1.11.16,2.22.16,3.33l2.67.17v5.33l-1.83.5.16,7.67-1.66,1.16L65.31,82a54.33,54.33,0,0,1-9.66,6.17,55,55,0,0,1-17.92,5.33A50.18,50.18,0,0,1,10.31,82V63l-2.5-2.5-.08-8.33L5.9,51.94l0-5.16,1.35-.25,2.58.12Z"/>
+            <line class="cls-2" x1="9.81" y1="46.65" x2="10.31" y2="62.98"/>
+            <line class="cls-2" x1="66.81" y1="47.98" x2="66.15" y2="62.81"/>
+            <path class="cls-1" d="M37.73,57.14a29.83,29.83,0,0,0-25.25-7.66c3.72,2.25,7.81,4.5,12.25,6.67q3.54,1.73,6.92,3.16l1.5,33.51-1.71-.36a59,59,0,0,0-9.21-26.9,57.43,57.43,0,0,0-9.29-10.93c.16,2.56.32,5.13.49,7.69a36.74,36.74,0,0,1,8.22,7.33,38.93,38.93,0,0,1,8.53,22.51A21.67,21.67,0,0,0,45.6,92,36.23,36.23,0,0,1,53,71.23a34.84,34.84,0,0,1,10-8.75l.67-6.17A44.67,44.67,0,0,0,52.06,67.73a45.85,45.85,0,0,0-8,24.62l-1.55.47L44,59.23a43,43,0,0,0,7.5-2.5,43.43,43.43,0,0,0,11.33-7.25,33.63,33.63,0,0,0-25.08,7.66Z"/>
+            <line class="cls-1" x1="63.69" y1="83.47" x2="62.98" y2="62.48"/>
+            <path class="cls-1" d="M23,1.63V4.06H19.75l.06,2.5-7,.44-3.5,3.75L8.94,46.31c0,.57-2.32.34-2.32.34v-36L4.81,8.19.5,7.88V2.75l4.31-.06V.5h8.38l.12,1.19Z"/>
+            <polyline class="cls-1" points="13.43 62.32 11.52 82.95 13.43 62.32"/>
+        </g>
+    </g>
+</svg>
+</body>
+<script>
+$(document).ready(function(){
+	$('.cls-1').click(function(){
+		var iro = $('.jscolor').css('background-color');
+		console.log(iro);
+		$(this).css('fill',iro);
+	});
+});	
+</script>
+</html>

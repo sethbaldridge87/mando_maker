@@ -1,0 +1,15 @@
+div {
+    border: 1px solid red;
+}
+svg {
+    position: absolute;
+}
+#mando_body {
+    position:relative;
+    top:100px;
+}
+.helmet {
+    width: 40%;
+    left: 28%;
+    margin-top: -18%;
+}
